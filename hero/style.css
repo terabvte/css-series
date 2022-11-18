@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
@@ -10,12 +10,28 @@ html {
 }
 
 header {
-    height: 100vh;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 2, 33, 0.5)),
+		url(./hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.flex-wrapper {
+	height: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inner {
+	width: 50%;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1200px;
+	margin: 0 auto;
+	width: 1275px;
+	color: white;
 }
 
 nav {
@@ -23,11 +39,21 @@ nav {
 	font-weight: 700;
 	display: flex;
 	justify-content: space-between;
+    padding-top: 32px;
+}
+
+nav > * {
+    cursor: pointer;
+}
+
+nav > *:hover {
+    color: #bbb;
 }
 
 h1 {
 	font-size: 52px;
 	margin-bottom: 32px;
+	line-height: 1.05;
 }
 
 p {
@@ -43,17 +69,21 @@ p {
 	text-decoration: none;
 	color: white;
 	background-color: #e67e22;
-    display: inline-block;
-    padding: 16px 32px;
-    border-radius: 8px;
+	display: inline-block;
+	padding: 16px 32px;
+	border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: #c36a1d;
 }
 
 h2 {
-    font-size: 44px;
-    margin-bottom: 48px;
+	font-size: 44px;
+	margin-bottom: 48px;
 }
 
 section {
-    padding: 96px 0;
-    background-color: #f7f7f7;
+	padding: 96px 0;
+	background-color: #f7f7f7;
 }
